@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Predict</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Patua One', cursive;
+        }
+
+        header {
+            position: fixed;
+            background: rgb(203, 226, 200);
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.6s;
+            padding: 40px 100px;
+            z-index: 1000;
+            height: 75px;
+
+        }
+
+        header ul {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header ul li {
+            position: relative;
+            list-style: none;
+        }
+
+        header ul li a {
+            position: relative;
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: 500px;
+            transition: 0.6s;
+        }
+
+        header a {
+            text-decoration: none;
+            color: black;
+        }
+
+        header.sticky {
+            position: relative;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 25px;
+            transition: 0.6s;
+            color: black;
+
+        }
+
+        header ul a:hover {
+            color: white;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!--===================== Navigation Menu===================== -->
+    <header>
+        <a href="#" class="sticky">Agriculture Cyber Physical System for Crop Recommendation</a>
+        <ul>
+            <li> <a href="/templates/index.html">Home</a> </li>
+            <li> <a href="./about.html">About Us</a> </li>
+            <li> <a href="./contact.html">Contact Us</a> </li>
+        </ul>
+    </header>
+
+    <div class="container py-2 mx-auto my-50 h-10 " style="margin: 12rem;">
+        <div class="row">
+            <div class="col-sm py-2 py-md-3">
+                <div class="card card-body" style="justify-content: center;">
+                     <h1 class="text-center"><b>You should grow <i>{{ prediction }} </i>in your farm</b></h1>
+                </div>
+            </div>
+        </div>
+      </div>
+</body>
+
+</html>

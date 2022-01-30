@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Predict</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Patua One', cursive;
+        }
+
+        header {
+            position: fixed;
+            background: rgb(203, 226, 200);
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.6s;
+            padding: 40px 100px;
+            z-index: 1000;
+            height: 75px;
+
+        }
+
+        header ul {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header ul li {
+            position: relative;
+            list-style: none;
+        }
+
+        header ul li a {
+            position: relative;
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: 500px;
+            transition: 0.6s;
+        }
+
+        header a {
+            text-decoration: none;
+            color: black;
+        }
+
+        header.sticky {
+            position: relative;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 25px;
+            transition: 0.6s;
+            color: black;
+
+        }
+
+        header ul a:hover {
+            color: white;
+        }
+        form
+        {
+            text-align: center;
+            margin-top: 80px;
+        }
+        input
+        {
+            position: relative;
+            margin: 10px 10px ;
+            padding: 0px 22px ;
+            width: 150px;
+            left: 50px;
+            line-height: 40px;
+            width: 200px;
+            border-radius: 6px;
+            font-size: 18px;
+
+        }
+        .formname
+        {
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        .button button
+        {
+            margin: 20px 20px;
+            padding: 10px 20px ;
+            color: black;
+            font-size: 20px;
+            
+            background-color: rgb(61, 187, 23);
+            border-radius: 5px;
+        }
+        .button a 
+        {
+            text-decoration: none;
+            color: black;
+            
+        }
+        .button
+        {
+            text-align: center;
+
+        }
+        .button a:hover{
+            color: white;
+        }
+        label
+        {
+            width: 100px;
+            display: inline-block;
+        }
+        .footer
+        {
+            text-align: center;
+            background-color: rgb(203, 226, 200);
+            height: 100px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!--===================== Navigation Menu===================== -->
+    <header>
+        <a href="#" class="sticky">Agriculture Cyber Physical System for Crop Recommendation</a>
+        <ul>
+            <li> <a href="/templates/index.html">Home</a> </li>
+            <li> <a href="./about.html">About Us</a> </li>
+            <li> <a href="./contact.html">Contact Us</a> </li>
+        </ul>
+    </header>
+
+    <!--===================== form section======================= -->
+
+    <div class="form">
+        <div class="formname" >
+            <h2>Enter Details as below for Crop Recommendation</h2>
+        </div>
+        <form acton="/crop-predict" method="post">
+            <label for="Name">Nitrogen</label>
+            <input type="number" name="Nitrogen">
+            <br>
+
+            <label for="Name">Phosphurous</label>
+            <input type="number" name="Phosphurous">
+            <br>
+
+            <label for="Name">Potassium</label>
+            <input type="number" name="Potassium">
+
+            <br>
+            <label for="Name">pH Value</label>
+            <input type="number" name="pH">
+
+            <br>
+            <label for="Name">Humidity</label>
+            <input type="number" name="Humidity">
+
+            <br>
+
+            <label for="Name">Temprature</label>
+            <input type="number" name="Temprature">
+            <br>
+
+            <label for="Name">Moisture</label>
+            <input type="number" name="Moisture">
+            <br>
+
+            <label for="Name">Rain Fall</label>
+            <input type="number" name="Rain fall">
+
+
+            <div class="button">
+                <button>Predict</button>
+            </div>
+
+            
+        </form>
+    </div>
+    <!--==================== Footer section ================= -->
+    <footer class="footer">
+        
+        
+    </footer>
+</body>
+
+</html>
