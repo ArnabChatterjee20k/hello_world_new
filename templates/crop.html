@@ -14,7 +14,7 @@
             box-sizing: border-box;
             font-family: 'Patua One', cursive;
         }
-
+        
         header {
             position: fixed;
             background: rgb(203, 226, 200);
@@ -28,21 +28,20 @@
             padding: 40px 100px;
             z-index: 1000;
             height: 75px;
-
         }
-
+        
         header ul {
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-
+        
         header ul li {
             position: relative;
             list-style: none;
         }
-
+        
         header ul li a {
             position: relative;
             margin: 0 15px;
@@ -51,12 +50,12 @@
             font-weight: 500px;
             transition: 0.6s;
         }
-
+        
         header a {
             text-decoration: none;
             color: black;
         }
-
+        
         header.sticky {
             position: relative;
             text-decoration: none;
@@ -64,70 +63,65 @@
             font-size: 25px;
             transition: 0.6s;
             color: black;
-
         }
-
+        
         header ul a:hover {
             color: white;
         }
-        form
-        {
+        
+        form {
             text-align: center;
             margin-top: 80px;
         }
-        input
-        {
+        
+        input {
             position: relative;
-            margin: 10px 10px ;
-            padding: 0px 22px ;
+            margin: 10px 10px;
+            padding: 0px 22px;
             width: 150px;
             left: 50px;
             line-height: 40px;
             width: 200px;
             border-radius: 6px;
             font-size: 18px;
-
         }
-        .formname
-        {
+        
+        .formname {
             text-align: center;
             color: rgb(0, 0, 0);
         }
-        .button button
-        {
+        
+        .button button {
             margin: 20px 20px;
-            padding: 10px 20px ;
+            padding: 10px 20px;
             color: black;
             font-size: 20px;
-            
             background-color: rgb(61, 187, 23);
             border-radius: 5px;
         }
-        .button a 
-        {
+        
+        .button a {
             text-decoration: none;
             color: black;
-            
         }
-        .button
-        {
+        
+        .button {
             text-align: center;
-
         }
-        .button a:hover{
+        
+        .button a:hover {
             color: white;
         }
-        label
-        {
+        
+        label {
             width: 100px;
             display: inline-block;
         }
-        .footer
-        {
+        
+        .footer {
             text-align: center;
             background-color: rgb(203, 226, 200);
             height: 100px;
-            
         }
     </style>
 </head>
@@ -146,54 +140,54 @@
     <!--===================== form section======================= -->
 
     <div class="form">
-        <div class="formname" >
+        <div class="formname">
             <h2>Enter Details as below for Crop Recommendation</h2>
         </div>
         <form acton="/crop-predict" method="post">
             <label for="Name">Nitrogen</label>
-            <input type="number" name="Nitrogen">
+            <input type="number" name="nitrogen">
             <br>
 
             <label for="Name">Phosphurous</label>
-            <input type="number" name="Phosphurous">
+            <input type="number" name="phosphorous">
             <br>
 
             <label for="Name">Potassium</label>
-            <input type="number" name="Potassium">
+            <input type="number" name="potasium">
 
             <br>
             <label for="Name">pH Value</label>
-            <input type="number" name="pH">
+            <input type="number" name="ph">
 
             <br>
             <label for="Name">Humidity</label>
-            <input type="number" name="Humidity">
+            <input type="number" name="humidity">
 
             <br>
 
             <label for="Name">Temprature</label>
-            <input type="number" name="Temprature">
+            <input type="number" name="temprature">
             <br>
 
             <label for="Name">Moisture</label>
-            <input type="number" name="Moisture">
+            <input type="number" name="moisture">
             <br>
 
             <label for="Name">Rain Fall</label>
-            <input type="number" name="Rain fall">
+            <input type="number" name="rainfall">
 
 
             <div class="button">
                 <button>Predict</button>
             </div>
 
-            
+
         </form>
     </div>
     <!--==================== Footer section ================= -->
     <footer class="footer">
-        
-        
+
+
     </footer>
 </body>
 
